@@ -1,3 +1,7 @@
+# Ran Mizrahi 314809625
+# Shmuel Ben-Attar 208007138
+# Post.py
+
 import matplotlib.pyplot as plt
 from PIL import Image
 import User
@@ -261,8 +265,5 @@ class SalePost(Post):
 
     # Returns a string representation of the SalePost instance.
     def __str__(self):
-        if self.__is_sold:
-            sold_str = "Sold!"
-        else:
-            sold_str = "For sale!"
+        sold_str = "Sold!" if self.__is_sold else "For sale!"
         return f"{self.get_published().get_name()} posted a product for sale:\n{sold_str} {self.get_info()}, price: {self.__price}, pickup from: {self.__location}\n"

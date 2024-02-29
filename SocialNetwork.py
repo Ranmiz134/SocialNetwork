@@ -1,3 +1,7 @@
+# Ran Mizrahi 314809625
+# Shmuel Ben-Attar 208007138
+# SocialNetwork.py
+
 from User import User
 
 
